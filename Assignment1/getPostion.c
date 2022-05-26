@@ -6,29 +6,21 @@ int * MatchLengthPosition(char * window, char * text)
 {
     int *A = (int * )malloc(sizeof(int)*3);
     int flag =0;
-    for(int i=strlen(window)-1;i>=0;i--)
+    for(int i=0;i<strlen(window);i++)
     {   
-        for(int j=0;j<strlen(text)-i;j++)//
-        {   
-            printf("i=%d j=%d\n",i,j);
-            printf("%s,%s,%d,%d\n",&window[0],&text[j],(i+1),strncmp(&window[0],&text[j],(i+1)));
-            if(strncmp(&window[0],&text[j],(i+1))==0)
-            {
-                A[0]=1;
-                A[1]=i;
-                A[2]=i+1;
-                flag =1;
-                printf("HERE\n");
-                break;
-            }
-        }
-        if(flag==1)
+        if(strncmp(&window[i],&text[0],strlen(window)-i)==0)
+        {
+            A[0]=1;
+            A[1]=strlen(window)-i-1;
+            A[2]= strlen(window)-i;
+            flag =1;
             break;
+        }
     }
     if(flag==0)
     {
         A[0]=0;
-        A[1]=window[0];
+        A[1]=text[0];
     }
     return A;
 }
