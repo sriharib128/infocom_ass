@@ -10,14 +10,15 @@ int * MatchLengthPosition(char * window, char * text)
     {   
         for(int j=0;j<strlen(text)-i;j++)//
         {   
-            // printf("i=%d j=%d\n",i,j);
-            // printf("%s,%s,%d,%d\n",&window[0],&text[j],(i+1),strncmp(&window[0],&text[j],(i+1)));
+            printf("i=%d j=%d\n",i,j);
+            printf("%s,%s,%d,%d\n",&window[0],&text[j],(i+1),strncmp(&window[0],&text[j],(i+1)));
             if(strncmp(&window[0],&text[j],(i+1))==0)
             {
                 A[0]=1;
                 A[1]=i;
                 A[2]=i+1;
                 flag =1;
+                printf("HERE\n");
                 break;
             }
         }
@@ -69,5 +70,7 @@ int main()
         printf("[%d,%d,%d]\n",A[0],A[1],A[2]);
     else
         printf("[%d,%c]\n",A[0],A[1]);
+    printf("----------------------------------\n");
     }
+
 }
