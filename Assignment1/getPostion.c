@@ -50,12 +50,12 @@ void ParseSWLZ(char * InputText,int WindowSize)
         int end = i;
         getsubstring(window,InputText,start,end);//gives substring from start to end -1
         printf("%s-%d\n",window,strlen(window));
-        for(int j=0;j<strlen(window);j++)
+
+        for(int j=end-1;j>=start;j--)
         {
             char subwindow[WindowSize+1];
             subwindow[0]='\0';
-            start = j;end = i;
-            getsubstring(subwindow,window,start,end);
+            getsubstring(subwindow,window,start,j);
             printf("\t\t>%s-%d\n",subwindow,strlen(subwindow));
         }
         printf("----------------\n");
