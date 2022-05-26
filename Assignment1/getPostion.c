@@ -42,23 +42,44 @@ void getsubstring(char * window,char * InputText , int start , int end)
 
 void ParseSWLZ(char * InputText,int WindowSize)
 {
-    for(int i=0;i<strlen(InputText);i++)
+    for(int i=0;i<strlen(InputText);)
     {
         char window[WindowSize+1];
         window[0]='\0';
         int start = maximum(0,i-16);
         int end = i;
         getsubstring(window,InputText,start,end);//gives substring from start to end -1
-        printf("%s-%d\n",window,strlen(window));
-
-        for(int j=end-1;j>=start;j--)
+        // printf("%s-%d\n",window,strlen(window));
+        int *A;
+        int max =-1;
+        int flag =0;
+        // for(int j=end-1;j>=start;j--)
+        for(int j=start;j<end;j++)
         {
             char subwindow[WindowSize+1];
             subwindow[0]='\0';
             getsubstring(subwindow,window,start,j);
-            printf("\t\t>%s-%d\n",subwindow,strlen(subwindow));
+            // printf("\t\t>%s-%d\n",subwindow,strlen(subwindow));
+            int * A_temp=MatchLengthPosition(subwindow,&InputText[i]);
+            if(A_temp[0]==1)
+            {
+                A_temp[1]=A_temp[1] + ( (end-1)-j );
+                if(A_temp[2]>=max)
+                {
+                    A=A_temp;
+                    max = A_temp[2];
+                }
+                flag =1;
+            }
         }
-        printf("----------------\n");
+        if(flag==0)
+            printf("[%d,%c]\n",0,InputText[i++]);
+        else
+        {
+            printf("[%d,%d,%d]\n",A[0],A[1],A[2]);
+            i=i+A[2];
+        }
+        // printf("----------------\n");
     }
 }
 
