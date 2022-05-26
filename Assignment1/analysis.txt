@@ -1,261 +1,239 @@
 -0
-----------------
+[0,M]
+-----------------------------------------------
+
 M-1
 		>-0
-----------------
+[0,Y]
+-----------------------------------------------
+
 MY-2
-		>M-1
 		>-0
-----------------
+		>M-1
+[0, ]
+-----------------------------------------------
+
 MY -3
-		>MY-2
-		>M-1
 		>-0
-----------------
-MY M-4
-		>MY -3
-		>MY-2
 		>M-1
-		>-0
-----------------
+		>MY-2
+[1,1,2]
+-----------------------------------------------
+
 MY MY-5
-		>MY M-4
-		>MY -3
-		>MY-2
-		>M-1
 		>-0
-----------------
+		>M-1
+		>MY-2
+		>MY -3
+		>MY M-4
+[1,1,1]
+-----------------------------------------------
+
 MY MY -6
-		>MY MY-5
-		>MY M-4
-		>MY -3
-		>MY-2
-		>M-1
 		>-0
-----------------
-MY MY H-7
+		>M-1
+		>MY-2
+		>MY -3
+		>MY M-4
+		>MY MY-5
+[0,W]
+-----------------------------------------------
+
+MY MY W-7
+		>-0
+		>M-1
+		>MY-2
+		>MY -3
+		>MY M-4
+		>MY MY-5
 		>MY MY -6
-		>MY MY-5
-		>MY M-4
-		>MY -3
-		>MY-2
-		>M-1
+[0,H]
+-----------------------------------------------
+
+MY MY WH-8
 		>-0
-----------------
-MY MY HA-8
-		>MY MY H-7
+		>M-1
+		>MY-2
+		>MY -3
+		>MY M-4
+		>MY MY-5
 		>MY MY -6
-		>MY MY-5
-		>MY M-4
-		>MY -3
-		>MY-2
-		>M-1
+		>MY MY W-7
+[0,A]
+-----------------------------------------------
+
+MY MY WHA-9
 		>-0
-----------------
-MY MY HAT-9
-		>MY MY HA-8
-		>MY MY H-7
+		>M-1
+		>MY-2
+		>MY -3
+		>MY M-4
+		>MY MY-5
 		>MY MY -6
-		>MY MY-5
-		>MY M-4
-		>MY -3
-		>MY-2
-		>M-1
+		>MY MY W-7
+		>MY MY WH-8
+[0,T]
+-----------------------------------------------
+
+MY MY WHAT-10
 		>-0
-----------------
-MY MY HAT -10
-		>MY MY HAT-9
-		>MY MY HA-8
-		>MY MY H-7
+		>M-1
+		>MY-2
+		>MY -3
+		>MY M-4
+		>MY MY-5
 		>MY MY -6
-		>MY MY-5
-		>MY M-4
-		>MY -3
-		>MY-2
-		>M-1
+		>MY MY W-7
+		>MY MY WH-8
+		>MY MY WHA-9
+[1,3,1]
+-----------------------------------------------
+
+MY MY WHAT -11
 		>-0
-----------------
-MY MY HAT W-11
-		>MY MY HAT -10
-		>MY MY HAT-9
-		>MY MY HA-8
-		>MY MY H-7
+		>M-1
+		>MY-2
+		>MY -3
+		>MY M-4
+		>MY MY-5
 		>MY MY -6
-		>MY MY-5
-		>MY M-4
-		>MY -3
-		>MY-2
-		>M-1
+		>MY MY W-7
+		>MY MY WH-8
+		>MY MY WHA-9
+		>MY MY WHAT-10
+[1,1,1]
+-----------------------------------------------
+
+MY MY WHAT A-12
 		>-0
-----------------
-MY MY HAT WH-12
-		>MY MY HAT W-11
-		>MY MY HAT -10
-		>MY MY HAT-9
-		>MY MY HA-8
-		>MY MY H-7
+		>M-1
+		>MY-2
+		>MY -3
+		>MY M-4
+		>MY MY-5
 		>MY MY -6
-		>MY MY-5
-		>MY M-4
-		>MY -3
-		>MY-2
-		>M-1
+		>MY MY W-7
+		>MY MY WH-8
+		>MY MY WHA-9
+		>MY MY WHAT-10
+		>MY MY WHAT -11
+[1,0,1]
+-----------------------------------------------
+
+MY MY WHAT A -13
 		>-0
-----------------
-MY MY HAT WHA-13
-		>MY MY HAT WH-12
-		>MY MY HAT W-11
-		>MY MY HAT -10
-		>MY MY HAT-9
-		>MY MY HA-8
-		>MY MY H-7
+		>M-1
+		>MY-2
+		>MY -3
+		>MY M-4
+		>MY MY-5
 		>MY MY -6
-		>MY MY-5
-		>MY M-4
-		>MY -3
-		>MY-2
-		>M-1
+		>MY MY W-7
+		>MY MY WH-8
+		>MY MY WHA-9
+		>MY MY WHAT-10
+		>MY MY WHAT -11
+		>MY MY WHAT A-12
+[1,4,4]
+-----------------------------------------------
+
+Y MY WHAT A HAT -16
 		>-0
-----------------
-MY MY HAT WHAT-14
-		>MY MY HAT WHA-13
-		>MY MY HAT WH-12
-		>MY MY HAT W-11
-		>MY MY HAT -10
-		>MY MY HAT-9
-		>MY MY HA-8
-		>MY MY H-7
-		>MY MY -6
-		>MY MY-5
-		>MY M-4
-		>MY -3
-		>MY-2
-		>M-1
-		>-0
-----------------
-MY MY HAT WHAT -15
-		>MY MY HAT WHAT-14
-		>MY MY HAT WHA-13
-		>MY MY HAT WH-12
-		>MY MY HAT W-11
-		>MY MY HAT -10
-		>MY MY HAT-9
-		>MY MY HA-8
-		>MY MY H-7
-		>MY MY -6
-		>MY MY-5
-		>MY M-4
-		>MY -3
-		>MY-2
-		>M-1
-		>-0
-----------------
-MY MY HAT WHAT I-16
-		>MY MY HAT WHAT -15
-		>MY MY HAT WHAT-14
-		>MY MY HAT WHA-13
-		>MY MY HAT WH-12
-		>MY MY HAT W-11
-		>MY MY HAT -10
-		>MY MY HAT-9
-		>MY MY HA-8
-		>MY MY H-7
-		>MY MY -6
-		>MY MY-5
-		>MY M-4
-		>MY -3
-		>MY-2
-		>M-1
-		>-0
-----------------
-Y MY HAT WHAT IS-16
-		> MY HAT WHAT IS-15
-		> MY HAT WHAT I-14
-		> MY HAT WHAT -13
-		> MY HAT WHAT-12
-		> MY HAT WHA-11
-		> MY HAT WH-10
-		> MY HAT W-9
-		> MY HAT -8
-		> MY HAT-7
-		> MY HA-6
-		> MY H-5
-		> MY -4
-		> MY-3
-		> M-2
 		> -1
+		> M-2
+		> MY-3
+		> MY -4
+		> MY W-5
+		> MY WH-6
+		> MY WHA-7
+		> MY WHAT-8
+		> MY WHAT -9
+		> MY WHAT A-10
+		> MY WHAT A -11
+		> MY WHAT A H-12
+		> MY WHAT A HA-13
+		> MY WHAT A HAT-14
+		> MY WHAT A HAT -15
+[0,I]
+-----------------------------------------------
+
+ MY WHAT A HAT I-16
 		>-0
-----------------
- MY HAT WHAT IS -16
-		>Y HAT WHAT IS -14
-		>Y HAT WHAT IS -14
-		>Y HAT WHAT IS-13
-		>Y HAT WHAT I-12
-		>Y HAT WHAT -11
-		>Y HAT WHAT-10
-		>Y HAT WHA-9
-		>Y HAT WH-8
-		>Y HAT W-7
-		>Y HAT -6
-		>Y HAT-5
-		>Y HA-4
-		>Y H-3
-		>Y -2
 		>Y-1
+		>Y -2
+		>Y W-3
+		>Y WH-4
+		>Y WHA-5
+		>Y WHAT-6
+		>Y WHAT -7
+		>Y WHAT A-8
+		>Y WHAT A -9
+		>Y WHAT A H-10
+		>Y WHAT A HA-11
+		>Y WHAT A HAT-12
+		>Y WHAT A HAT -13
+		>Y WHAT A HAT I-14
+		>Y WHAT A HAT I-14
+[0,S]
+-----------------------------------------------
+
+MY WHAT A HAT IS-16
 		>-0
-----------------
-MY HAT WHAT IS T-16
-		>HAT WHAT IS T-13
-		>HAT WHAT IS T-13
-		>HAT WHAT IS T-13
-		>HAT WHAT IS -12
-		>HAT WHAT IS-11
-		>HAT WHAT I-10
-		>HAT WHAT -9
-		>HAT WHAT-8
-		>HAT WHA-7
-		>HAT WH-6
-		>HAT W-5
-		>HAT -4
-		>HAT-3
-		>HA-2
-		>H-1
-		>-0
-----------------
-Y HAT WHAT IS TH-16
-		>T WHAT IS TH-12
-		>T WHAT IS TH-12
-		>T WHAT IS TH-12
-		>T WHAT IS TH-12
-		>T WHAT IS T-11
-		>T WHAT IS -10
-		>T WHAT IS-9
-		>T WHAT I-8
-		>T WHAT -7
-		>T WHAT-6
-		>T WHA-5
-		>T WH-4
-		>T W-3
-		>T -2
-		>T-1
-		>-0
-----------------
- HAT WHAT IS THA-16
-		>WHAT IS THA-11
-		>WHAT IS THA-11
-		>WHAT IS THA-11
-		>WHAT IS THA-11
-		>WHAT IS THA-11
-		>WHAT IS TH-10
-		>WHAT IS T-9
-		>WHAT IS -8
-		>WHAT IS-7
-		>WHAT I-6
-		>WHAT -5
-		>WHAT-4
-		>WHA-3
-		>WH-2
 		>W-1
+		>WH-2
+		>WHA-3
+		>WHAT-4
+		>WHAT -5
+		>WHAT A-6
+		>WHAT A -7
+		>WHAT A H-8
+		>WHAT A HA-9
+		>WHAT A HAT-10
+		>WHAT A HAT -11
+		>WHAT A HAT I-12
+		>WHAT A HAT IS-13
+		>WHAT A HAT IS-13
+		>WHAT A HAT IS-13
+[1,4,1]
+-----------------------------------------------
+
+Y WHAT A HAT IS -16
 		>-0
-----------------
-----------------------------------
+		>A-1
+		>AT-2
+		>AT -3
+		>AT A-4
+		>AT A -5
+		>AT A H-6
+		>AT A HA-7
+		>AT A HAT-8
+		>AT A HAT -9
+		>AT A HAT I-10
+		>AT A HAT IS-11
+		>AT A HAT IS -12
+		>AT A HAT IS -12
+		>AT A HAT IS -12
+		>AT A HAT IS -12
+[1,7,1]
+-----------------------------------------------
+
+ WHAT A HAT IS T-16
+		>-0
+		> -1
+		> A-2
+		> A -3
+		> A H-4
+		> A HA-5
+		> A HAT-6
+		> A HAT -7
+		> A HAT I-8
+		> A HAT IS-9
+		> A HAT IS -10
+		> A HAT IS T-11
+		> A HAT IS T-11
+		> A HAT IS T-11
+		> A HAT IS T-11
+		> A HAT IS T-11
+[1,11,3]
+-----------------------------------------------
+
