@@ -63,7 +63,7 @@ void ParseSWLZ(char * InputText,int WindowSize)
             int * A_temp=MatchLengthPosition(subwindow,&InputText[i]);
             if(A_temp[0]==1)
             {
-                A_temp[1]=A_temp[1] + ( (end-1)-j );
+                A_temp[1]=A_temp[1] +strlen(window)-strlen(subwindow) ;
                 
                 printf("\t\t\t>[%d,%d,%d]\n",A_temp[0],A_temp[1],A_temp[2]);
                 
