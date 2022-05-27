@@ -15,8 +15,14 @@ MY-2
 
 MY -3
 		>M-1
+			>[1,2,1]
+				>A is changed
 		>MY-2
+			>[1,2,2]
+				>A is changed
 		>MY -3
+			>[1,2,3]
+				>A is changed
 [1,2,3]
 -----------------------------------------------
 
@@ -70,9 +76,14 @@ MY MY WHAT-10
 		>M-1
 		>MY-2
 		>MY -3
+			>[1,7,1]
+				>A is changed
 		>MY M-4
 		>MY MY-5
 		>MY MY -6
+			>[1,4,1]
+				>A_temp and A have same match length
+					>A is changed to new minposition
 		>MY MY W-7
 		>MY MY WH-8
 		>MY MY WHA-9
@@ -90,6 +101,8 @@ MY MY WHAT -11
 		>MY MY W-7
 		>MY MY WH-8
 		>MY MY WHA-9
+			>[1,2,1]
+				>A is changed
 		>MY MY WHAT-10
 		>MY MY WHAT -11
 [1,2,1]
@@ -99,14 +112,22 @@ MY MY WHAT A-12
 		>M-1
 		>MY-2
 		>MY -3
+			>[1,9,1]
+				>A is changed
 		>MY M-4
 		>MY MY-5
 		>MY MY -6
+			>[1,6,1]
+				>A_temp and A have same match length
+					>A is changed to new minposition
 		>MY MY W-7
 		>MY MY WH-8
 		>MY MY WHA-9
 		>MY MY WHAT-10
 		>MY MY WHAT -11
+			>[1,1,1]
+				>A_temp and A have same match length
+					>A is changed to new minposition
 		>MY MY WHAT A-12
 [1,1,1]
 -----------------------------------------------
@@ -120,15 +141,43 @@ MY MY WHAT A -13
 		>MY MY -6
 		>MY MY W-7
 		>MY MY WH-8
+			>[1,5,1]
+				>A is changed
 		>MY MY WHA-9
+			>[1,5,2]
+				>A is changed
 		>MY MY WHAT-10
+			>[1,5,3]
+				>A is changed
 		>MY MY WHAT -11
+			>[1,5,4]
+				>A is changed
 		>MY MY WHAT A-12
 		>MY MY WHAT A -13
 [1,5,4]
 -----------------------------------------------
 
 Y MY WHAT A HAT -16
+		>Y-1
+		>Y -2
+		>Y M-3
+		>Y MY-4
+		>Y MY -5
+		>Y MY W-6
+		>Y MY WH-7
+		>Y MY WHA-8
+		>Y MY WHAT-9
+		>Y MY WHAT -10
+		>Y MY WHAT A-11
+		>Y MY WHAT A -12
+		>Y MY WHAT A H-13
+		>Y MY WHAT A HA-14
+		>Y MY WHAT A HAT-15
+		>Y MY WHAT A HAT -16
+[0,I]
+-----------------------------------------------
+
+ MY WHAT A HAT I-16
 		> -1
 		> M-2
 		> MY-3
@@ -144,87 +193,94 @@ Y MY WHAT A HAT -16
 		> MY WHAT A HA-13
 		> MY WHAT A HAT-14
 		> MY WHAT A HAT -15
-		> MY WHAT A HAT -15
-[0,I]
+		> MY WHAT A HAT I-16
+[0,S]
 -----------------------------------------------
 
- MY WHAT A HAT I-16
+MY WHAT A HAT IS-16
+		>M-1
+		>MY-2
+		>MY -3
+			>[1,16,1]
+				>A is changed
+		>MY W-4
+		>MY WH-5
+		>MY WHA-6
+		>MY WHAT-7
+		>MY WHAT -8
+			>[1,11,1]
+				>A_temp and A have same match length
+					>A is changed to new minposition
+		>MY WHAT A-9
+		>MY WHAT A -10
+			>[1,9,1]
+				>A_temp and A have same match length
+					>A is changed to new minposition
+		>MY WHAT A H-11
+		>MY WHAT A HA-12
+		>MY WHAT A HAT-13
+		>MY WHAT A HAT -14
+			>[1,5,1]
+				>A_temp and A have same match length
+					>A is changed to new minposition
+		>MY WHAT A HAT I-15
+		>MY WHAT A HAT IS-16
+[1,5,1]
+-----------------------------------------------
+
+Y WHAT A HAT IS -16
 		>Y-1
 		>Y -2
 		>Y W-3
 		>Y WH-4
 		>Y WHA-5
 		>Y WHAT-6
+			>[1,14,1]
+				>A is changed
 		>Y WHAT -7
 		>Y WHAT A-8
 		>Y WHAT A -9
 		>Y WHAT A H-10
 		>Y WHAT A HA-11
 		>Y WHAT A HAT-12
+			>[1,8,1]
+				>A_temp and A have same match length
+					>A is changed to new minposition
 		>Y WHAT A HAT -13
 		>Y WHAT A HAT I-14
-		>Y WHAT A HAT I-14
-		>Y WHAT A HAT I-14
-[0,S]
------------------------------------------------
-
-MY WHAT A HAT IS-16
-		>W-1
-		>WH-2
-		>WHA-3
-		>WHAT-4
-		>WHAT -5
-		>WHAT A-6
-		>WHAT A -7
-		>WHAT A H-8
-		>WHAT A HA-9
-		>WHAT A HAT-10
-		>WHAT A HAT -11
-		>WHAT A HAT I-12
-		>WHAT A HAT IS-13
-		>WHAT A HAT IS-13
-		>WHAT A HAT IS-13
-		>WHAT A HAT IS-13
-[1,5,1]
------------------------------------------------
-
-Y WHAT A HAT IS -16
-		>A-1
-		>AT-2
-		>AT -3
-		>AT A-4
-		>AT A -5
-		>AT A H-6
-		>AT A HA-7
-		>AT A HAT-8
-		>AT A HAT -9
-		>AT A HAT I-10
-		>AT A HAT IS-11
-		>AT A HAT IS -12
-		>AT A HAT IS -12
-		>AT A HAT IS -12
-		>AT A HAT IS -12
-		>AT A HAT IS -12
+		>Y WHAT A HAT IS-15
+		>Y WHAT A HAT IS -16
 [1,8,1]
 -----------------------------------------------
 
  WHAT A HAT IS T-16
 		> -1
-		> A-2
-		> A -3
-		> A H-4
-		> A HA-5
-		> A HAT-6
-		> A HAT -7
-		> A HAT I-8
-		> A HAT IS-9
-		> A HAT IS -10
-		> A HAT IS T-11
-		> A HAT IS T-11
-		> A HAT IS T-11
-		> A HAT IS T-11
-		> A HAT IS T-11
-		> A HAT IS T-11
+		> W-2
+		> WH-3
+			>[1,18,1]
+				>A is changed
+		> WHA-4
+			>[1,18,2]
+				>A is changed
+		> WHAT-5
+			>[1,18,3]
+				>A is changed
+		> WHAT -6
+		> WHAT A-7
+		> WHAT A -8
+		> WHAT A H-9
+			>[1,12,1]
+		> WHAT A HA-10
+			>[1,12,2]
+		> WHAT A HAT-11
+			>[1,12,3]
+				>A_temp and A have same match length
+					>A is changed to new minposition
+		> WHAT A HAT -12
+		> WHAT A HAT I-13
+		> WHAT A HAT IS-14
+		> WHAT A HAT IS -15
+		> WHAT A HAT IS T-16
 [1,12,3]
 -----------------------------------------------
 
