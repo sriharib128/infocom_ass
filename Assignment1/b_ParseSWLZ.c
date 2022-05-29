@@ -78,13 +78,23 @@ void ParseSWLZ(char * InputText,int WindowSize)
                     max = A_temp[2];
                 }
                 flag =1;
+                if( (j==(strlen(window)-1)) && (A[1]== (A[2]-1) ) )
+                {
+                    int a=0;
+                    while(InputText[i+A[2]+a]==InputText[i+a])
+                    {
+                        printf("\n%c & %c \n",InputText[i+A[2]+a],InputText[i+a]);
+                        a++;
+                    }
+                    A[2]=A[2]+a;
+                }
             }
         }
         if(flag==0)
-            printf("[%d,%c]\n",0,InputText[i++]);
+            printf("[%d,%c] ",0,InputText[i++]);
         else
         {
-            printf("[%d,%d,%d]\n",A[0],A[1],A[2]);
+            printf("[%d,%d,%d] ",A[0],A[1],A[2]);
             i=i+A[2];
         }
         // printf("-----------------------------------------------\n\n");
@@ -103,6 +113,8 @@ int main()
     while(1)
     {
         scanf("%c",&temp);
+        if(temp==' ')
+            temp='-';
         if(temp=='\n')
             break;
         text[k++]=temp;

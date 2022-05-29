@@ -1,0 +1,261 @@
+-0
+[0,M] -----------------------------------------------
+
+M-1
+		>M-1
+[0,Y] -----------------------------------------------
+
+MY-2
+		>M-1
+		>MY-2
+[0,-] -----------------------------------------------
+
+MY--3
+		>M-1
+			>[1,2,1]
+				>A is changed
+		>MY-2
+			>[1,2,2]
+				>A is changed
+		>MY--3
+			>[1,2,3]
+				>A is changed
+[1,2,3] -----------------------------------------------
+
+MY-MY--6
+		>M-1
+		>MY-2
+		>MY--3
+		>MY-M-4
+		>MY-MY-5
+		>MY-MY--6
+[0,W] -----------------------------------------------
+
+MY-MY-W-7
+		>M-1
+		>MY-2
+		>MY--3
+		>MY-M-4
+		>MY-MY-5
+		>MY-MY--6
+		>MY-MY-W-7
+[0,H] -----------------------------------------------
+
+MY-MY-WH-8
+		>M-1
+		>MY-2
+		>MY--3
+		>MY-M-4
+		>MY-MY-5
+		>MY-MY--6
+		>MY-MY-W-7
+		>MY-MY-WH-8
+[0,A] -----------------------------------------------
+
+MY-MY-WHA-9
+		>M-1
+		>MY-2
+		>MY--3
+		>MY-M-4
+		>MY-MY-5
+		>MY-MY--6
+		>MY-MY-W-7
+		>MY-MY-WH-8
+		>MY-MY-WHA-9
+[0,T] -----------------------------------------------
+
+MY-MY-WHAT-10
+		>M-1
+		>MY-2
+		>MY--3
+			>[1,7,1]
+				>A is changed
+		>MY-M-4
+		>MY-MY-5
+		>MY-MY--6
+			>[1,4,1]
+				>A is changed
+		>MY-MY-W-7
+		>MY-MY-WH-8
+		>MY-MY-WHA-9
+		>MY-MY-WHAT-10
+[1,4,1] -----------------------------------------------
+
+MY-MY-WHAT--11
+		>M-1
+		>MY-2
+		>MY--3
+		>MY-M-4
+		>MY-MY-5
+		>MY-MY--6
+		>MY-MY-W-7
+		>MY-MY-WH-8
+		>MY-MY-WHA-9
+			>[1,2,1]
+				>A is changed
+		>MY-MY-WHAT-10
+		>MY-MY-WHAT--11
+[1,2,1] -----------------------------------------------
+
+MY-MY-WHAT-A-12
+		>M-1
+		>MY-2
+		>MY--3
+			>[1,9,1]
+				>A is changed
+		>MY-M-4
+		>MY-MY-5
+		>MY-MY--6
+			>[1,6,1]
+				>A is changed
+		>MY-MY-W-7
+		>MY-MY-WH-8
+		>MY-MY-WHA-9
+		>MY-MY-WHAT-10
+		>MY-MY-WHAT--11
+			>[1,1,1]
+				>A is changed
+		>MY-MY-WHAT-A-12
+[1,1,1] -----------------------------------------------
+
+MY-MY-WHAT-A--13
+		>M-1
+		>MY-2
+		>MY--3
+		>MY-M-4
+		>MY-MY-5
+		>MY-MY--6
+		>MY-MY-W-7
+		>MY-MY-WH-8
+			>[1,5,1]
+				>A is changed
+		>MY-MY-WHA-9
+			>[1,5,2]
+				>A is changed
+		>MY-MY-WHAT-10
+			>[1,5,3]
+				>A is changed
+		>MY-MY-WHAT--11
+			>[1,5,4]
+				>A is changed
+		>MY-MY-WHAT-A-12
+		>MY-MY-WHAT-A--13
+[1,5,4] -----------------------------------------------
+
+Y-MY-WHAT-A-HAT--16
+		>Y-1
+		>Y--2
+		>Y-M-3
+		>Y-MY-4
+		>Y-MY--5
+		>Y-MY-W-6
+		>Y-MY-WH-7
+		>Y-MY-WHA-8
+		>Y-MY-WHAT-9
+		>Y-MY-WHAT--10
+		>Y-MY-WHAT-A-11
+		>Y-MY-WHAT-A--12
+		>Y-MY-WHAT-A-H-13
+		>Y-MY-WHAT-A-HA-14
+		>Y-MY-WHAT-A-HAT-15
+		>Y-MY-WHAT-A-HAT--16
+[0,I] -----------------------------------------------
+
+-MY-WHAT-A-HAT-I-16
+		>--1
+		>-M-2
+		>-MY-3
+		>-MY--4
+		>-MY-W-5
+		>-MY-WH-6
+		>-MY-WHA-7
+		>-MY-WHAT-8
+		>-MY-WHAT--9
+		>-MY-WHAT-A-10
+		>-MY-WHAT-A--11
+		>-MY-WHAT-A-H-12
+		>-MY-WHAT-A-HA-13
+		>-MY-WHAT-A-HAT-14
+		>-MY-WHAT-A-HAT--15
+		>-MY-WHAT-A-HAT-I-16
+[0,S] -----------------------------------------------
+
+MY-WHAT-A-HAT-IS-16
+		>M-1
+		>MY-2
+		>MY--3
+			>[1,13,1]
+				>A is changed
+		>MY-W-4
+		>MY-WH-5
+		>MY-WHA-6
+		>MY-WHAT-7
+		>MY-WHAT--8
+			>[1,8,1]
+				>A is changed
+		>MY-WHAT-A-9
+		>MY-WHAT-A--10
+			>[1,6,1]
+				>A is changed
+		>MY-WHAT-A-H-11
+		>MY-WHAT-A-HA-12
+		>MY-WHAT-A-HAT-13
+		>MY-WHAT-A-HAT--14
+			>[1,2,1]
+				>A is changed
+		>MY-WHAT-A-HAT-I-15
+		>MY-WHAT-A-HAT-IS-16
+[1,2,1] -----------------------------------------------
+
+Y-WHAT-A-HAT-IS--16
+		>Y-1
+		>Y--2
+		>Y-W-3
+		>Y-WH-4
+		>Y-WHA-5
+		>Y-WHAT-6
+			>[1,10,1]
+				>A is changed
+		>Y-WHAT--7
+		>Y-WHAT-A-8
+		>Y-WHAT-A--9
+		>Y-WHAT-A-H-10
+		>Y-WHAT-A-HA-11
+		>Y-WHAT-A-HAT-12
+			>[1,4,1]
+				>A is changed
+		>Y-WHAT-A-HAT--13
+		>Y-WHAT-A-HAT-I-14
+		>Y-WHAT-A-HAT-IS-15
+		>Y-WHAT-A-HAT-IS--16
+[1,4,1] -----------------------------------------------
+
+-WHAT-A-HAT-IS-T-16
+		>--1
+		>-W-2
+		>-WH-3
+			>[1,13,1]
+				>A is changed
+		>-WHA-4
+			>[1,13,2]
+				>A is changed
+		>-WHAT-5
+			>[1,13,3]
+				>A is changed
+		>-WHAT--6
+		>-WHAT-A-7
+		>-WHAT-A--8
+		>-WHAT-A-H-9
+			>[1,7,1]
+		>-WHAT-A-HA-10
+			>[1,7,2]
+		>-WHAT-A-HAT-11
+			>[1,7,3]
+				>A is changed
+		>-WHAT-A-HAT--12
+		>-WHAT-A-HAT-I-13
+		>-WHAT-A-HAT-IS-14
+		>-WHAT-A-HAT-IS--15
+		>-WHAT-A-HAT-IS-T-16
+[1,7,3] -----------------------------------------------
+
