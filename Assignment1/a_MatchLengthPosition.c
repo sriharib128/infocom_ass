@@ -3,6 +3,14 @@
 #include  <stdlib.h>
 #define N 1000000
 
+void getsubstring(char * window,char * InputText , int start , int end)
+{
+    int j=0;
+    for(int i=start;i<end;i++)
+        window[j++]=InputText[i];
+    window[j]='\0';
+}
+
 int * MatchLengthPosition(char * window, char * text)
 {
     int *A = (int * )malloc(sizeof(int)*3);
@@ -24,6 +32,39 @@ int * MatchLengthPosition(char * window, char * text)
         A[1]=text[0];
     }
     return A;
+}
+
+int * MLP(char * window , char * text)
+{
+        int *A = (int * )malloc(sizeof(int)*3);
+        int max =-1;
+        int min_position=2147483647;
+        int flag =0;
+        int WindowSize=strlen(window);
+        for(int j=0;j<strlen(window);j++)
+        {
+            char subwindow[WindowSize+1];
+            subwindow[0]='\0';
+            getsubstring(subwindow,window,0,(j+1));
+            
+            // printf("\t\t>%s-%d\n",subwindow,strlen(subwindow));
+            
+            int * A_temp=MatchLengthPosition(subwindow,text);
+            if(A_temp[0]==1)
+            {
+                A_temp[1]=A_temp[1] +strlen(window)-strlen(subwindow) ;
+                
+                // printf("\t\t\t>[%d,%d,%d]\n",A_temp[0],A_temp[1],A_temp[2]);
+                
+                if(A_temp[2]>=max)
+                {
+                    // printf("\t\t\t\t>A is changed\n");
+                    A=A_temp;
+                    max = A_temp[2];
+                }
+            }
+        }
+        return A;
 }
 
 int main()
@@ -50,7 +91,7 @@ int main()
     }
     text[k]='\0';
 
-    int * A = MatchLengthPosition(window,text);
+    int * A = MLP(window,text);
     
     if(A[0]==0)
         printf("[%d,%c]\n",A[0],A[1]);

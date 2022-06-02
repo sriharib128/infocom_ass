@@ -83,7 +83,7 @@ void ParseSWLZ(char * InputText,int WindowSize)
                     int a=0;
                     while(InputText[i+A[2]+a]==InputText[i+a])
                     {
-                        printf("\n%c & %c \n",InputText[i+A[2]+a],InputText[i+a]);
+                        // printf("\n%c & %c \n",InputText[i+A[2]+a],InputText[i+a]);
                         a++;
                     }
                     A[2]=A[2]+a;

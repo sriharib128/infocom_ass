@@ -46,7 +46,7 @@ void ParseSWLZ(char * InputText,int WindowSize)
     {
         char window[WindowSize+1];
         window[0]='\0';
-        int start = maximum(0,i-16);
+        int start = maximum(0,i-WindowSize);
         int end = i;
         getsubstring(window,InputText,start,end);//gives substring from start to end -1
         
@@ -68,7 +68,9 @@ void ParseSWLZ(char * InputText,int WindowSize)
             if(A_temp[0]==1)
             {
                 A_temp[1]=A_temp[1] +strlen(window)-strlen(subwindow) ;
-                
+                // if(A_temp[1]<0)
+                //     printf("%s_%d %s_%d\n",window,strlen(window),subwindow,strlen(subwindow));
+
                 // printf("\t\t\t>[%d,%d,%d]\n",A_temp[0],A_temp[1],A_temp[2]);
                 
                 if(A_temp[2]>=max)
@@ -83,7 +85,7 @@ void ParseSWLZ(char * InputText,int WindowSize)
                     int a=0;
                     while(InputText[i+A[2]+a]==InputText[i+a])
                     {
-                        printf("\n%c & %c \n",InputText[i+A[2]+a],InputText[i+a]);
+                        // printf("\n%c & %c \n",InputText[i+A[2]+a],InputText[i+a]);
                         a++;
                     }
                     A[2]=A[2]+a;
