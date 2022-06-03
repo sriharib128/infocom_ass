@@ -1,1 +1,52 @@
-[0,e] [0,y] [1,1,1] [0,-] [0,o] [0,f] [1,2,1] [0,t] [0,h] [1,6,2] [1,3,1] [0,i] [0,g] [1,4,1] [0,r] [1,5,1] [1,4,1] [1,6,1] [0,'] [0,s] [1,14,6] [1,3,1] [1,12,1] [1,11,1] [0,l] [1,0,1] [1,28,8] [1,5,1] [1,28,2] [1,5,1] [1,7,1] [1,33,6] [0,k] [1,5,1] [0,n] [1,6,1] 
+Window Size = 10
+
+Considering (win[i],win[0]) of the following substrings
+to cover all possible substrings of window
+
+CDDCDDCDDF-10   (Text)
+-0   (window)
+		>NO MATCH FOUND
+[0,C]
+-----------------------------------------------
+
+DDCDDCDDF-9   (Text)
+C-1   (window)
+		>NO MATCH FOUND
+[0,D]
+-----------------------------------------------
+
+DCDDCDDF-8   (Text)
+CD-2   (window)
+		>CD-2
+			>[1,0,1]
+				>A_final is changed
+		>remaining substrings
+			>no match
+[1,0,1]
+-----------------------------------------------
+
+CDDCDDF-7   (Text)
+CDD-3   (window)
+		>C-1
+			>[1,2,1]
+				>A_final is changed
+		>CD-2
+			>[1,2,2]
+				>A_final is changed
+		>CDD-3
+			>[1,2,3]
+				>A_final is changed
+			 > Input is matching with the considered window in a 
+			 	circular manner A is changed to 
+					> [1,2,6]
+		>remaining substrings
+			>no match
+[1,2,6]
+-----------------------------------------------
+
+F-1   (Text)
+CDDCDDCDD-9   (window)
+		>NO MATCH FOUND
+[0,F]
+-----------------------------------------------
+

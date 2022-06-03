@@ -1,0 +1,71 @@
+Window Size = 16
+
+Considering (win[i],win[0]) of the following substrings to cover all possible substrings for each window
+
+CDDCDDCDDDC-11   (Text)
+-0   (window)
+		>NO MATCH FOUND
+[0,C]
+-----------------------------------------------
+
+DDCDDCDDDC-10   (Text)
+C-1   (window)
+		>NO MATCH FOUND
+[0,D]
+-----------------------------------------------
+
+DCDDCDDDC-9   (Text)
+CD-2   (window)
+		>CD-2
+			>[1,0,1]
+				>A_final is changed
+		>remaining substrings
+			>no match
+[1,0,1]
+-----------------------------------------------
+
+CDDCDDDC-8   (Text)
+CDD-3   (window)
+		>C-1
+			>[1,2,1]
+				>A_final is changed
+		>CD-2
+			>[1,2,2]
+				>A_final is changed
+		>CDD-3
+			>[1,2,3]
+				>A_final is changed
+			 > Input is matching with the considered window in a circular manner A is changed to 
+				 > [1,2,6]
+		>remaining substrings
+			>no match
+[1,2,6]
+-----------------------------------------------
+
+DC-2   (Text)
+CDDCDDCDD-9   (window)
+		>CD-2
+			>[1,7,1]
+				>A_final is changed
+		>CDD-3
+			>[1,6,1]
+				>A_final is changed
+		>CDDC-4
+			>[1,6,2]
+				>A_final is changed
+		>CDDCD-5
+			>[1,4,1]
+		>CDDCDD-6
+			>[1,3,1]
+		>CDDCDDC-7
+			>[1,3,2]
+				>A_final is changed
+		>CDDCDDCD-8
+			>[1,1,1]
+		>CDDCDDCDD-9
+			>[1,0,1]
+		>remaining substrings
+			>no match
+[1,3,2]
+-----------------------------------------------
+

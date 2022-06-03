@@ -87,34 +87,42 @@ int * MatchLengthPosition(char * window,char * InputText)
 
 int main()
 {
-    char window[N];
-    char text[N];
+    int t;
+    scanf("%d",&t);
     char temp;
-    int k=0;
-    while(1)
+    scanf("%c",&temp);
+    while(t--)
     {
-        scanf("%c",&temp);
-        if(temp=='\n')
-            break;
-        window[k++]=temp;
-    }
-    window[k]='\0';
-    k=0;
-    while(1)
-    {
-        scanf("%c",&temp);
-        if(temp=='\n')
-            break;
-        text[k++]=temp;
-    }
-    text[k]='\0';
+        char window[N];
+        char text[N];
+        // char temp;
+        int k=0;
+        while(1)
+        {
+            scanf("%c",&temp);
+            if(temp=='\n')
+                break;
+            window[k++]=temp;
+        }
+        window[k]='\0';
+        k=0;
+        while(1)
+        {
+            scanf("%c",&temp);
+            if(temp=='\n')
+                break;
+            text[k++]=temp;
+        }
+        text[k]='\0';
 
-    int * A = MatchLengthPosition(window,text);
-    
-    if(A[0]==0)
-        printf("[%d,%c]",A[0],A[1]);
-    else
-    {
-        printf("[%d,%d,%d]",A[0],A[1],A[2]);
+        int * A = MatchLengthPosition(window,text);
+        printf("%s-%d   (Text)\n%s-%d   (window)\n",text,strlen(text),window,strlen(window));
+        if(A[0]==0)
+            printf("\t\t> [%d,%c]\n\n",A[0],A[1]);
+        else
+        {
+            printf("\t\t> [%d,%d,%d]\n\n",A[0],A[1],A[2]);
+        }
+        printf("-------------------------------------------------------------------\n");
     }
 }
